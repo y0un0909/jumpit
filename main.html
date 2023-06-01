@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점핏</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- 타이틀 애니메이션 slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul.ad").slick({
+                dots: true,
+                autoplay: true,
+                arrows: true, //좌우버튼
+                autoplaySpeed: 3000,
+                speed: 500,
+                infinite: true,
+            });
+            $('.need a').hover(function () {
+                $(this).removeClass("gray");
+                $(".need a").not(this).addClass("gray");
+            })
+            $(".bc").mouseleave(function () {
+                $(".need a").removeClass("gray");
+            })
+            $('.login a').hover(function () {
+                $(this).removeClass("gray");
+                $(".login a").not(this).addClass("gray");
+            })
+            $(".login").mouseleave(function () {
+                $(".login a").removeClass("gray");
+            })
+            $(".mdul").slick({
+                dots: true,
+                arrows: true, //좌우버튼
+                autoplaySpeed: 2000,
+                speed: 2000,
+            });
+            $("section.last .iosad > figure img").wrap("<span></span>");
+            $(".well").addClass("hide");
+            $('.saul').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                speed: 1000,
+                infinite: true,
+            });
+            $(".popuplo").click(function () {
+                $(".log").removeClass("hide");
+                return false;
+            });
+            $(".x").click(function () {
+                $(".log").addClass("hide");
+                return false;
+            });
+            $(".position .positionin button").click(function () {
+                $(".log").removeClass("hide");
+                return false;
+            });
+            $(".x").click(function () {
+                $(".log").addClass("hide");
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body class="wrap">
+    <!-- 헤더 네비 부분 -->
+    <header>
+        <nav>
+            <div class="head wrap flex">
+                <h1 class="h1">점핏</h1>
+                <form>
+                    <input class="border" type="text" placeholder="검색어를 입력해주세요" required />
+                    <input class="icons" type="submit">
+                </form>
+            </div>
+            <div class="gnb nav wrap">
+                <ul class="bc">
+                    <li class="need">
+                        <a class="bold" href="">직무 탐색</a>
+                    </li>
+                    <li class="need">
+                        <a class="bold" href="">더.루키</a>
+                        <div class="well">
+                            <ul class="sisi flex">
+                                <li class="madesome">
+                                    <a href="">절찬 채용중</a>
+                                </li>
+                                <li class="madesome">
+                                    <a href="">취업꿀팁 대방출</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="need">
+                        <a class="bold" href="">이력서</a>
+                    </li>
+                    <li class="need">
+                        <a class="bold" href="">개발자 인터뷰</a>
+                    </li>
+                    <li class="need">
+                        <a class="bold" href="">취업 Q&A</a>
+                    </li>
+                    <li class="need">
+                        <a class="bold" href="">북콘서트</a>
+                    </li>
+                </ul>
+                <ul class="login">
+                    <li class="popuplo"><a class="bold" href="">회원가입/로그인</a></li>
+                    <li><a></a></li>
+                    <li><a class="bold" href="">기업 서비스</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="log hide">
+        <div class="madeid">
+            <div class="bo">
+                <button class="x">X</button>
+            </div>
+            <h2 class="hi">반가워요<br><span>점핏에서 커리어점프해요!</span></h2>
+            <p class="et">이메일</p>
+            <input class="emali" type="text" placeholder="이메일을 입력해주세요" required />
+            <button class="jt">점핏 시작하기</button>
+            <div class="an">
+                <label for="" class="at">자동 로그인</label>
+            </div>
+            <div class="simg">
+                <div class="sns">SNS로 3초만에 로그인</div>
+                <div class="ig">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <p class="hl">기업 고객이신가요? <span>기업서비스 바로가기</span></p>
+        </div>
+    </div>
+    <!-- ad와 로그인 부분 -->
+    <section>
+        <div class="adbox wrap">
+            <ul class="ad">
+                <li>
+                    <figure>
+                        <img src="img/1.png" alt="">
+                        <figcaption>신규사업을 함께 만들어 나갈<br> 열정있는 동료 적극 모집 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/2.png" alt="">
+                        <figcaption>앤씨앤<br>개발자 적극 채용 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/3.png" alt="">
+                        <figcaption>럭셔리 쇼핑몰 발란<br>함께 성장할 발라니어 적극 모집 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/4.png" alt="">
+                        <figcaption>유진 로봇<br>저기..로봇 좋아하세요?</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/5.png" alt="">
+                        <figcaption>지니언스<br>글로벌 통합 보안 플랫폼은 채용 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/6.png" alt="">
+                        <figcaption>새로운 이동 생활을 만들어갈<br> 씽씽크루 적극 채용 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/7.png" alt="">
+                        <figcaption>와디즈<br>즐겁게 같이 일할 동료 절찬 모집 중!</figcaption>
+                        </img>
+                    </figure>
+                </li>
+            </ul>
+            <div class="logbox">
+                <div class="wlogbox">
+                    <p class="p">회원가입/로그인하고<br>
+                        점핏의 다양한 혜택을 만나보세요.</p>
+                    <button>회원가입/로그인</button>
+                    <ul class="ngga">
+                        <p>SNS로 3초만에 로그인</p>
+                        <li>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="notice">
+                    <p class="wnotice">Notice</p>
+                    <div class="member flex">
+                        <p>회원약관 및 개인정보 처리방침 개정 사전 안내</p>
+                        <p class="date">2023-04</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 우측광고 -->
+            <div class="sa">
+                <ul class="saul">
+                    <li class="sali">
+                        <img src="img/la1.png" alt="">
+                    </li>
+                    <li class="sali">
+                        <img src="img/la2.png" alt="">
+                    </li>
+                    <li class="sali">
+                        <img src="img/la3.png" alt="">
+                    </li>
+                    <li class="sali">
+                        <img src="img/la4.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="middle">
+        <div class="md">
+            <h2>테마별 모음.zip</h2>
+            <ul class="mdul">
+                <li class="mdad flex">
+                    <img src="img/ad1.png" alt="">
+                    <a href="">운전대에서 손떼는<br>시대를 앞당기고 싶다면</a>
+                    </img>
+                    <img src="img/ad2.png" alt="">
+                    <a href="" class="sp">나는 T다.<br>로봇 개발자가 되어볼까?</a>
+                    </img>
+                </li>
+                <li class="mdad flex">
+                    <img src="img/ad3.png" alt="">
+                    <a href="">내 옆봉 옆자리가<br>바뀌는 포지션</a>
+                    </img>
+                    <img src="img/ad4.png" alt="">
+                    <a href="" class="sp white">오프라인 no.1 부트캠프<br>위코드 전용 채용관</a>
+                    </img>
+                </li>
+                <li class="mdad flex">
+                    <img src="img/ad5.png" alt="">
+                    <a href="">일잘러로 성장하고<br>싶다면?!
+                    </a>
+                    </img>
+                    <img src="img/ad6.png" alt="">
+                    <a href="" class="sp">요즘 폼 미친 기업s</a>
+                    </img>
+                </li>
+            </ul>
+        </div>
+        <div class="position">
+            <h3 class="bold">회원님을 위한 포지션을 보고싶다면?</h3>
+
+            <div class="positionin flex">
+                <p>
+                    <i>🖐</i>
+                    <span>3초만에 회원가입/로그인하고 취향저격 포지션을 추천 받아보세요!</span>
+                </p>
+                <button>회원가입/로그인</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="last">
+        <div class="ios">
+            <div class="int flex">
+                <h2 class="bold">IOS 개발자 이번주 인기 포지션</h2>
+                <p>전체 보기</p>
+            </div>
+            <div class="iosad">
+                <figure>
+                    <img src="img/ios1.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">다이얼커뮤니케이션즈</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios2.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">줌인터넷</p>
+                        <h4>[ZUM] iOS 앱 개발자</h4>
+                        <p class="ex">iOS · Swift · SwiftUI</p>
+                        <p class="addr">서울 영등포구 신입~6년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios3.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios4.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios5.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios6.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios7.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ios8.png" alt="">
+                    <figcaption class="io">
+                        <p class="cpn">임의</p>
+                        <h4>iOS 개발자 채용 (재택근무가능)</h4>
+                        <p class="ex">Swift · Objective-C · iOS</p>
+                        <p class="addr">서울 강서구 경력 2~10년</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <div class="money">
+        <img src="img/money.svg" alt="">
+        <p>점핏에서 지원하고 합격하면<span>취업축하금 70만원</span>을 드려요💰</p>
+    </div>
+    <footer>
+        <div class="kkk">
+            <div class="fd flex">
+                <h2 class="wl">jumpit</h2>
+                <div class="fdd flex">
+                    <nav class="na flex">
+                        <dl>
+                            <dd>점핏 고객센터 : 02-2025-2733 (평일 09:00 - 18:00, 점심시간 12:00 - 13:00, 주말·공휴일 휴무)<br>이메일 : help@jumpit.co.kr / Fax : 02-6937-0036</dd>
+                            <dd>(주)사람인, 우 : 08378, 서울특별시 구로구 디지털로34길 43, 14층(구로동, 코오롱싸이언스밸리 1차), 대표 : 김용환</dd>
+                            <dd>사업자등록 : 113-86-00917 / 직업정보제공사업 : 서울 관악 제 2005-6호 / 통신판매업 : 제 2339호</dd>
+                            <dd>Copyright (c) (주)사람인. All rights reserved.</dd>
+                            <dd class="imgg">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </dd>
+                        </dl>
+                        <div class="nna">
+                            <ul>
+                                <il class="epe"><a href="">서비스 </a></il>
+                                <il class="epe"><a href="">소개기업</a></il>
+                                <il class="epe"><a href="">점핏Team</a></il>
+                            </ul>
+                            <ul>
+                                <il class="epe"><a href="">이용약관</a></il>
+                                <il class="epe bold"><a href="">개인정보 처리방침</a></il>
+                                <il class="epe"><a href="">자주묻는질문 FAQ</a></il>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
