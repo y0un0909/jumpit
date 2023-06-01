@@ -91,9 +91,9 @@
 }
 .slick-prev:hover{
     
-    color: transparent;
+    
     outline: none;
-    background: transparent;
+   
     background-image: none;
     background-image: url(../img/prev-hover.svg);
     width: 40px;
