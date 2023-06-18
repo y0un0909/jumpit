@@ -151,7 +151,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
 
     display: block;
 
@@ -162,6 +162,7 @@
     list-style: none;
 
     text-align: center;
+    z-index: 5;
 }
 .slick-dots li
 {
@@ -189,10 +190,11 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: gray;
     border: 0;
     outline: none;
     background: transparent;
+    font-size: 5px;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
